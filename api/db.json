@@ -4,6 +4,23 @@
       "title": "asas",
       "description": "asdasd",
       "id": 1
+    },
+    {
+      "title": "test2",
+      "description": "testing stream",
+      "id": 2
+    },
+    {
+      "title": "created by me",
+      "description": "hello world",
+      "userId": "104989796973433915069",
+      "id": 3
+    },
+    {
+      "title": "prog test stream",
+      "description": "not hello world",
+      "userId": "104989796973433915069",
+      "id": 4
     }
   ]
 }
