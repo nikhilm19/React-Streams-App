@@ -30,9 +30,12 @@ class StreamList extends React.Component {
     if (stream.userId === this.props.currentUserId) {
       return (
         <div className="p-2 flex flex-row ml-auto mr-4">
-          <button className="rounded bg-red-700 p-2 pl-4 pr-4 text-white mr-2 w-full">
+          <Link
+            to={`/streams/delete/${stream.id}`}
+            className="rounded bg-red-700 p-2 pl-4 pr-4 text-white mr-2 w-full"
+          >
             Delete
-          </button>
+          </Link>
           <Link
             to={`/streams/edit/${stream.id}`}
             className="rounded bg-blue-700 p-2 pl-4 pr-4 text-white w-full"

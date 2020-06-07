@@ -11,10 +11,10 @@ class StreamForm extends React.Component {
     console.log(formProps.meta);
 
     return (
-      <div className="field  flex justify-center flex-col p-8">
+      <div className="field  flex justify-center flex-col p-8 w-6/12">
         <label>{formProps.label}</label>
         <input
-          className="rounded border border-red-300"
+          className="rounded border border-red-300 p-2"
           {...formProps.input}
         ></input>
         {this.renderError(formProps.meta)}
