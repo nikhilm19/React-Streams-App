@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Router, Route, Link } from "react-router-dom";
+import { Router, Route, Link, Switch } from "react-router-dom";
 
 import StreamCreate from "./components/streams/StreamCreate";
 import StreamDelete from "./components/streams/StreamDelete";
@@ -12,17 +12,19 @@ import history from "./history";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-auto bg-gray-900">
       <Router history={history}>
         <div>
           <Header />
         </div>
-        <div>
-          <Route path="/" exact component={StreamList} />
-          <Route path="/streams/edit/:id" exact component={StreamEdit} />
-          <Route path="/streams/new" exact component={StreamCreate} />
-          <Route path="/streams/delete" exact component={StreamDelete} />
-          <Route path="/streams/show" exact component={StreamShow} />
+        <div className="h-auto">
+          <Switch>
+            <Route path="/" exact component={StreamList} />
+            <Route path="/streams/edit/:id" exact component={StreamEdit} />
+            <Route path="/streams/new" exact component={StreamCreate} />
+            <Route path="/streams/delete/:id" exact component={StreamDelete} />
+            <Route path="/streams/:id" exact component={StreamShow} />
+          </Switch>
         </div>
       </Router>
     </div>
