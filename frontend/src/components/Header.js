@@ -5,11 +5,11 @@ import GoogleAuth from "./GoogleAuth";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="flex space-between w-full shadow-md mb-8 border-b bg-white">
+    <div className="flex space-between w-full shadow-md  border-b  bg-black">
       <div className=" w-full flex-row flex justify-between p-2 items-center">
         <Link
           to="/"
-          className="text-2xl ml-4 text-indigo-700 flex flex-row  items-center"
+          className="text-2xl ml-4 text-purple-400 flex flex-row  items-center"
         >
           <svg fill="currentColor" viewBox="0 0 20 20" className="w-8 mr-2">
             <path
