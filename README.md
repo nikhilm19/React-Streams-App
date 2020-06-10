@@ -24,6 +24,14 @@ Media server setup using [`node-media-server`](https://github.com/illuspas/Node-
 
 This will initialize `tailwind.js` in the `frontend` directory
 
+### Environment variable
+
+    touch .env
+
+Add `REACT_APP_GOOGLE_CLIENT_ID=<YOUR_CLIENT_ID>` to the file and replace `YOUR_CLIENT_ID` with the actual client id .
+
+To get your client id refer this - [https://developers.google.com/identity/protocols/oauth2](https://developers.google.com/identity/protocols/oauth2)
+
 ## Available Scripts
 
 In the `frontend` directory, you can run:
