@@ -12,11 +12,9 @@ import history from "./history";
 
 function App() {
   return (
-    <div className="App h-auto bg-gray-900">
+    <div className="App h-auto  box-border bg-backg">
       <Router history={history}>
-        <div>
-          <Header />
-        </div>
+        <Header />
         <div className="h-auto">
           <Switch>
             <Route path="/" exact component={StreamList} />

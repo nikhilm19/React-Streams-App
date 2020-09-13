@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faCamera } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { fetchStreams } from "../../actions";
+import Landing from "../Landing";
 
 class StreamList extends React.Component {
   componentDidMount() {
@@ -82,7 +83,8 @@ class StreamList extends React.Component {
   render() {
     return (
       <div className="h-full flex flex-col">
-        <section class="text-gray-500 body-font bg-gray-900 flex-grow">
+        <section class="text-gray-500 body-font  flex-grow">
+          <Landing />
           <div class="container px-10 py-10 mx-auto">
             <div class="flex flex-wrap w-full mb-20">
               <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
